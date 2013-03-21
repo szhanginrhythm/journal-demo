@@ -14,16 +14,16 @@ describe('My Application', function() {
 		expect(browser().location().url()).toBe("/view1");
 	});
 
-	describe('View 1', function() {
-		beforeEach(function() {
-			browser().navigateTo('#/view1');
-			sleep(0.5);
-		});
+    describe('Journal', function() {
+        beforeEach(function() {
+            browser().navigateTo('#/journal');
+            sleep(0.5);
+        });
 
-		it('should...', function() {
-			//...
-		});
-	});
+        it('should have journal massage', function () {
+            expect(input('journal.name').val()).toBe('Shuai Zhang');
+        });
+    });
 });
 
 })();

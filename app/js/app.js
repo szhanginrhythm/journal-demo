@@ -2,8 +2,11 @@ define([
 	'angular',
 	'filters',
 	'services',
+    'services/journal',
 	'directives',
-	'controllers'
+	'controllers',
+    'controllers/journal',
+    'controllers/journalList'
 	], function (angular, filters, services, directives, controllers) {
 		'use strict';
 
