@@ -1,3 +1,10 @@
 <div>
     <p>{{message}}</p>
+    <div ng-repeat="journal in list">
+        <p>{{$index}}</p>
+        name: <input ng-model="journal.name">
+        date: <input ng-model="journal.date">
+        catalog: <input ng-model="journal.catalog">
+        note: <input ng-model="journal.note">
+    </div>
 </div>

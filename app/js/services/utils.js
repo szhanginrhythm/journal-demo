@@ -1,5 +1,5 @@
 define(['services'], function (serviceModule) {
-    serviceModule.factory('utilsService', function () {
+    return serviceModule.factory('utilsService', function () {
         return {
             getDate: function () {
                 var d = new Date();

@@ -1,0 +1,11 @@
+<div>
+    <p>{{message}}</p>
+    <form novalidate class="journalForm">
+        name: <input ng-model="journal.name" required>
+        date: <input ng-model="journal.date">
+        catalog: <input ng-model="journal.catalog">
+        note: <input ng-model="journal.note">
+        <button ng-click="resetForm()">Reset</button>
+        <button ng-click="saveJournal(journal)" ng-disabled="form.$invalid">Save</button>
+    </form>
+</div>
